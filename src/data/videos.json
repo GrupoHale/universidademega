@@ -1,0 +1,49 @@
+[
+  {
+    "id": 1,
+    "title": "Introdução ao Sistema",
+    "description": "Visão geral da plataforma",
+    "youtubeId": "ABC123",
+    "category": "Introdução"
+  },
+
+  {
+    "id": 2,
+    "title": "Cadastro de Pessoas",
+    "description": "Passo a passo do cadastro",
+    "youtubeId": "DEF456",
+    "category": "Operacional"
+  },
+
+  {
+    "id": 3,
+    "title": "Relatório BDV",
+    "description": "Análise de dados e métricas",
+    "youtubeId": "GHI789",
+    "category": "Relatórios"
+  },
+
+  {
+    "id": 4,
+    "title": "SSX Mobile",
+    "description": "Aprenda a utilizar o aplicativo SSX Mobile",
+    "youtubeId": "wdqkOoL9zcY",
+    "category": "SSX Mobile"
+  },
+
+  {
+    "id": 5,
+    "title": "Abastecimento",
+    "description":"Aprenda a gerenciar o abastecimento de veículos no sistema.",
+    "youtubeId":"jon6-Ixrhew",
+    "category":"Operacional"
+  },
+
+  {
+    "id": 6,
+    "title": "Relatório Geral",
+    "description":"Aprenda a exportar o relatório geral de veículos.",
+    "youtubeId":"DUb27nLgxRU",
+    "category":"Relatórios"
+  }
+]
