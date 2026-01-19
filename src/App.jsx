@@ -5,9 +5,7 @@ import Header from "./components/Header";
 import Filters from "./components/Filters";
 import VideoCard from "./components/VideoCard";
 import Footer from "./components/Footer";
-import MenuLateral from "./components/Menu";
-import { Menu } from "lucide-react";
-
+import MenuLateral from "./components/Menu"; 
 
 export default function App() {
   const [search, setSearch] = useState("");

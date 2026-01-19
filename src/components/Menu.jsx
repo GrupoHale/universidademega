@@ -1,6 +1,5 @@
 import { useState } from "react";
-import { Home, User, Settings, Menu, User2Icon, BookAIcon, BookOpen, Heading } from "lucide-react";
-import { ModuleGraph } from "vite";
+import { Home, Settings, Menu, BookOpen } from "lucide-react";
 
 export default function MenuLateral() {
   const [open, setOpen] = useState(false);
@@ -22,8 +21,8 @@ export default function MenuLateral() {
 
         <nav className="p-2 space-y-2">
           <MenuItem icon={<Home size={18} />} label="Inicio" open={open} />
-          <MenuItem icon={<User size={18} />} label="Base de conhecimento" open={open} />
-          <MenuItem icon={<Settings size={18} />} label="Videos" open={open} /> 
+          <MenuItem icon={<BookOpen size={18} />} label="Base de conhecimento" open={open} />
+          <MenuItem icon={<Settings size={18} />} label="Videos" open={open} />
         </nav>
       </aside>
     </div>
