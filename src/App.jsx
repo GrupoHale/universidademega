@@ -27,10 +27,9 @@ export default function App() {
     
     <div className="min-h-screen bg-gray-100">
       <div className="fixed top-0 left-0 z-50">
-        
-      </div>
-      <Header />
 
+      </div>
+      
       <main className="max-w-7xl mx-auto p-6">
         <Filters
           search={search}
