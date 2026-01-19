@@ -46,11 +46,6 @@ export default function App() {
             <VideoCard key={video.id} video={video} />
           ))}
 
-
-          <footer className="bg-gray-900 text-white p-6 text-center col-span-full mt-10">
-            <Footer />
-          </footer>
-
         </div>
       </main>
     </div>
