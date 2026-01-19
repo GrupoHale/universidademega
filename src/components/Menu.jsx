@@ -8,9 +8,8 @@ export default function MenuLateral() {
     <div className="flex h-screen fixed bg-gray-100">
 
       <aside
-        className={`bg-slate-900 text-white transition-all duration-300 ${open ? "w-64" : "w-16"}`}
-      >
-        <div className="flex items-center justify-between p-4 border-b border-slate-700">
+        className={`bg-slate-900 text-white transition-all duration-300 ${open ? "w-64" : "w-16"}`}>
+        <div className="flex items-center justify-between p-5 border-b border-slate-500">
           <span className={`text-lg font-bold ${!open && "hidden"}`}>
            Menu
           </span>
