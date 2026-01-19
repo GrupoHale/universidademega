@@ -1,11 +1,11 @@
 import { useState } from "react";
-import { Home, Settings, Menu, BookOpen } from "lucide-react";
+import { Home, Settings, Menu, BookOpen, SquarePlayIcon } from "lucide-react";
 
 export default function MenuLateral() {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="flex h-screen bg-gray-100">
+    <div className="flex h-screen fixed bg-gray-100">
 
       <aside
         className={`bg-slate-900 text-white transition-all duration-300 ${open ? "w-64" : "w-16"}`}
@@ -22,7 +22,7 @@ export default function MenuLateral() {
         <nav className="p-2 space-y-2">
           <MenuItem icon={<Home size={18} />} label="Inicio" open={open} />
           <MenuItem icon={<BookOpen size={18} />} label="Base de conhecimento" open={open} />
-          <MenuItem icon={<Settings size={18} />} label="Videos" open={open} />
+          <MenuItem icon={<SquarePlayIcon size={18} />} label="Videos" open={open} />
         </nav>
       </aside>
     </div>

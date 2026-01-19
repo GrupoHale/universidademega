@@ -4,7 +4,6 @@ import videosData from "./data/videos.json";
 import Header from "./components/Header";
 import Filters from "./components/Filters";
 import VideoCard from "./components/VideoCard";
-import Footer from "./components/Footer";
 import MenuLateral from "./components/Menu"; 
 
 export default function App() {
@@ -28,7 +27,7 @@ export default function App() {
     
     <div className="min-h-screen bg-gray-100">
       <div className="fixed top-0 left-0 z-50">
-        <MenuLateral />
+        
       </div>
       <Header />
 
