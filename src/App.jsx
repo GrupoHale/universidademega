@@ -1,13 +1,15 @@
+import { Routes, Route } from "react-router-dom";
 import { useState } from "react";
 import videosData from "./data/videos.json";
 
-import Header from "./components/Header";
 import Filters from "./components/Filters";
 import VideoCard from "./components/VideoCard";
-import MenuLateral from "./components/Menu";
+import Home from "./pages/Home";
+import Videos from "./pages/Videos";
+import BaseDeConhecimento from "./pages/BaseDeConhecimento";
+import Educador from "./pages/Educador";
 
-export default function App() {
-
+export function VideoContent() {
   const [search, setSearch] = useState("");
   const [category, setCategory] = useState("Todos");
 
@@ -25,7 +27,6 @@ export default function App() {
   });
 
   return (
-    
     <div className="min-h-screen bg-gray-100">
       <div className="fixed top-0 left-0 z-50">
 
@@ -46,8 +47,18 @@ export default function App() {
           ))}
 
         </div>
-
       </main>
     </div>
+  );
+}
+
+export default function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/videos" element={<Videos />} />
+      <Route path="/base-conhecimento" element={<BaseDeConhecimento />} />
+      <Route path="/educador" element={<Educador />} />
+    </Routes>
   );
 }
