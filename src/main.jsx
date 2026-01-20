@@ -6,12 +6,14 @@ import MenuLateral from "./components/Menu";
 import Footer from "./components/Footer";
 import "./index.css";
 import { Menu } from "lucide-react";
+import IA from "./components/IA";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <MenuLateral />
     <Header />
     <App />
+    <IA />
     <Footer />
   </React.StrictMode>
 );

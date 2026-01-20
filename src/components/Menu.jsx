@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Home, Settings, Menu, BookOpen, SquarePlayIcon } from "lucide-react";
+import { Home, Menu, BookOpen, SquarePlayIcon, User2Icon } from "lucide-react";
 
 export default function MenuLateral() {
   const [open, setOpen] = useState(false);
@@ -22,6 +22,7 @@ export default function MenuLateral() {
           <MenuItem icon={<Home size={18} />} label="Inicio" open={open} />
           <MenuItem icon={<BookOpen size={18} />} label="Base de conhecimento" open={open} />
           <MenuItem icon={<SquarePlayIcon size={18} />} label="Videos" open={open} />
+          <nav className="educador"><MenuItem icon={<User2Icon size={18} />} label="Área do educador" open={open} /></nav>
         </nav>
       </aside>
     </div>

@@ -4,9 +4,10 @@ import videosData from "./data/videos.json";
 import Header from "./components/Header";
 import Filters from "./components/Filters";
 import VideoCard from "./components/VideoCard";
-import MenuLateral from "./components/Menu"; 
+import MenuLateral from "./components/Menu";
 
 export default function App() {
+
   const [search, setSearch] = useState("");
   const [category, setCategory] = useState("Todos");
 
@@ -45,6 +46,7 @@ export default function App() {
           ))}
 
         </div>
+
       </main>
     </div>
   );
