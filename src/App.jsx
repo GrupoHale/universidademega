@@ -2,12 +2,14 @@ import { Routes, Route } from "react-router-dom";
 import { useState } from "react";
 import videosData from "./data/videos.json";
 
+import MenuLateral from "./components/Menu";
 import Filters from "./components/Filters";
 import VideoCard from "./components/VideoCard";
 import Home from "./pages/Home";
 import Videos from "./pages/Videos";
 import BaseDeConhecimento from "./pages/BaseDeConhecimento";
 import Educador from "./pages/Educador";
+import { Menu } from "lucide-react";
 
 export function VideoContent() {
   const [search, setSearch] = useState("");
@@ -65,7 +67,7 @@ export function VideoContent() {
           ))}
           
         </div>
-
+        
         {/* Navegador de páginas */}
         {totalPages > 1 && (
           <div className="mt-10 flex justify-center items-center gap-2">

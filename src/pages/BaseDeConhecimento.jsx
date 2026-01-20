@@ -1,5 +1,5 @@
 export default function BaseDeConhecimento() {
     return (
-        <h1>Base De Conhecimento</h1>
+        <div className="min-h-screen bg-gray-100"/>
     )
 }

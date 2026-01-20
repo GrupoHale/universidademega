@@ -11,7 +11,7 @@ import IA from "./components/IA";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <BrowserRouter>
-      <MenuLateral />
+      <MenuLateral/>
       <Header />
       <App />
       <IA />
