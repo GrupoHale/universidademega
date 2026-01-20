@@ -1,5 +1,9 @@
+import EducadorLogin from "../components/EducadorLogin";
+
 export default function Educador () {
     return (
-        <h1>Área do educador</h1>
+        <div>
+              <EducadorLogin />
+        </div>
     )
 }
