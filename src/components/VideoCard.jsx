@@ -20,7 +20,6 @@ export default function VideoCard({ video }) {
           {video.description}
         </p>
         <div className="flex justify-end mt-4">
-          <a className="bg-blue-900 text-white px-3 py-2 rounded mt-1 inline-block hover:bg-blue-700" href="">Ver mais</a>
         </div>
       </div>
     </div>
