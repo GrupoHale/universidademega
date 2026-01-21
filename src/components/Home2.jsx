@@ -42,14 +42,14 @@ export default function Home2() {
             descricao: "Módulo de gestão de frota pra quem já sabe o básico",
             icone: "📚",
             cor: "blue",
-            link: "2"
+            link: "base-de-conhecimento"
         },
         {
             titulo: "Aplicativos",
             descricao:  "Soluções integradas",
             icone: "📱",
             cor: "blue",
-            link: "3"
+            link: "/base-de-conhecimento"
         },
         {
             titulo: "Confira nossas videoaulas",
@@ -62,7 +62,7 @@ export default function Home2() {
 
     return (
         <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 py-16 px-4 sm:px-6 lg:px-8">
-            {/* Header Section */}
+
             <div className="max-w-4xl mx-auto text-center mb-16">
                 <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
                     Fique por dentro de todas as novidades do sistema
@@ -72,20 +72,19 @@ export default function Home2() {
                 </p>
             </div>
 
-            {/* Cards Grid */}
             <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
-                {cards.map((section, index) => (
+                {cards.map((card, index) => (
                     <div
                         key={index}
-                        className={`${getCardClasses(section.cor)} border-2 rounded-xl p-8 transition-all duration-300 hover:shadow-lg hover:scale-105 cursor-pointer`}>
-                        <div className="text-4xl mb-4">{section.icone}</div>
-                        <h2 className={`${gettituloClasses(section.cor)} text-2xl font-bold mb-3`}>
-                            {section.titulo}
+                        className={`${getCardClasses(card.cor)} border-2 rounded-xl p-8 transition-all duration-300 hover:shadow-lg hover:scale-105 cursor-pointer`}>
+                        <div className="text-4xl mb-4">{card.icone}</div>
+                        <h2 className={`${gettituloClasses(card.cor)} text-2xl font-bold mb-3`}>
+                            {card.titulo}
                         </h2>
                         <p className="text-gray-700 text-base mb-6 leading-relaxed">
-                            {section.descricao}
+                            {card.descricao}
                         </p>
-                        <a className={`${getButtonClasses(section.cor)} text-white px-6 py-2 rounded-lg font-semibold transition-cores duration-200`} to={section.link} href={section.link} > Acessar
+                        <a className={`${getButtonClasses(card.cor)} text-white px-6 py-2 rounded-lg font-semibold transition-cores duration-200`} to={card.link} href={card.link}>Acessar
                         </a>
                     </div>
                 ))}
