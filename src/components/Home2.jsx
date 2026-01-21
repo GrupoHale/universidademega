@@ -85,7 +85,7 @@ export default function Home2() {
                         <p className="text-gray-700 text-base mb-6 leading-relaxed">
                             {section.descricao}
                         </p>
-                        <a className={`${getButtonClasses(section.cor)} text-white px-6 py-2 rounded-lg font-semibold transition-cores duration-200`} href={section.link} > Acessar
+                        <a className={`${getButtonClasses(section.cor)} text-white px-6 py-2 rounded-lg font-semibold transition-cores duration-200`} to={section.link} href={section.link} > Acessar
                         </a>
                     </div>
                 ))}
