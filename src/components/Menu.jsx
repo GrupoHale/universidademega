@@ -117,7 +117,7 @@ export default function MenuLateral() {
   );
 }
 
-function MenuItem({ icon, label, path, open, onClick, mobile = false }) {
+export function MenuItem({ icon, label, path, open, onClick, mobile = false }) {
   return (
     <Link to={path} onClick={onClick}>
       <div className={`flex items-center gap-3 p-3 rounded-lg cursor-pointer hover:bg-slate-800 transition-colors ${

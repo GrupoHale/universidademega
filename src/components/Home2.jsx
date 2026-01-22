@@ -1,9 +1,11 @@
-const getCardClasses = (cor) => {
+const getcartaoClasses = (cor) => {
     const cores = {
         blue: "bg-blue-50 border-blue-200 hover:bg-blue-100",
         purple: "bg-purple-50 border-purple-200 hover:bg-purple-100",
         green: "bg-green-50 border-green-200 hover:bg-green-100",
-        orange: "bg-orange-50 border-orange-200 hover:bg-orange-100"
+        orange: "bg-orange-50 border-orange-200 hover:bg-orange-100",
+        red: "bg-red-50 border-red-200 hover:bg-red-100", 
+        black: "bg-black-50 border-black-200 hover:bg-black-100"
     };
     return cores[cor];
 };
@@ -13,7 +15,9 @@ const gettituloClasses = (cor) => {
         blue: "text-blue-700",
         purple: "text-purple-700",
         green: "text-green-700",
-        orange: "text-orange-700"
+        orange: "text-orange-700",
+        red: "text-red-700",
+        black: "text-black-700"
     };
     return cores[cor];
 };
@@ -22,41 +26,57 @@ const getButtonClasses = (cor) => {
     const cores = {
         blue: "bg-blue-600 hover:bg-blue-700",
         purple: "bg-purple-600 hover:bg-purple-700",
-        green: "bg-green-600 hover:bg-green-700",
-        orange: "bg-orange-600 hover:bg-orange-700"
+        green: "bg-green-6001 hover:bg-green-700",
+        orange: "bg-orange-600 hover:bg-orange-700",
+        red: "bg-red-600 hover:bg-red-700",
+        black: "bg-black-600 hover:bg-black-700"
     };
     return cores[cor];
 };
 
 export default function Home2() {
-    const cards = [
+    const cartoes = [
         {
             titulo: "Comece por aqui",
-            descricao: "Introdução a plataforma, primeiros passos",
+            descricao: "Conheça a plataforma e dê seus primeiros passos",
             icone: "🚀",
             cor: "blue",
-            link: "/base-de-conhecimento"
+            link: "/base-conhecimento"
         },
         {
             titulo: "Conteúdos Avançados",
             descricao: "Módulo de gestão de frota pra quem já sabe o básico",
             icone: "📚",
             cor: "blue",
-            link: "base-de-conhecimento"
+            link: "/base-conhecimento"
         },
         {
             titulo: "Aplicativos",
-            descricao:  "Soluções integradas",
+            descricao:  "Conheça nossos aplicativos integrados",
             icone: "📱",
             cor: "blue",
-            link: "/base-de-conhecimento"
+            link: "/base-conhecimento"
         },
         {
             titulo: "Confira nossas videoaulas",
-            descricao:  "Conteúdos sobre as funcionalidades do sistema gravados",
+            descricao:  "Conteúdos gravados sobre as funcionalidades do sistema",
             icone: "🎥",
             cor: "blue",
-            link: "/videos"
+            link: "/videos",
+        },
+        {
+            titulo:"Regras",
+            descricao:"Aprenda a criar regras personalizadas para auxiliar sua operação.",
+            icone:"⚠️",
+            cor:"blue",
+            link:"/base-conhecimento",
+        },
+        {
+            titulo:"Relatórios",
+            descricao:"Entenda como funciona os relatórios e como pode auxiliar em sua operação",
+            icone:"📋",
+            cor: "blue",
+            link:"/base-conhecimento",
         }
     ];
 
@@ -73,18 +93,18 @@ export default function Home2() {
             </div>
 
             <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
-                {cards.map((card, index) => (
+                {cartoes.map((cartao, index) => (
                     <div
                         key={index}
-                        className={`${getCardClasses(card.cor)} border-2 rounded-xl p-8 transition-all duration-300 hover:shadow-lg hover:scale-105 cursor-pointer`}>
-                        <div className="text-4xl mb-4">{card.icone}</div>
-                        <h2 className={`${gettituloClasses(card.cor)} text-2xl font-bold mb-3`}>
-                            {card.titulo}
+                        className={`${getcartaoClasses(cartao.cor)} border-2 rounded-xl p-8 transition-all duration-300 hover:shadow-lg hover:scale-105 cursor-pointer`}>
+                        <div className="text-4xl mb-4">{cartao.icone}</div>
+                        <h2 className={`${gettituloClasses(cartao.cor)} text-2xl font-bold mb-3`}>
+                            {cartao.titulo}
                         </h2>
                         <p className="text-gray-700 text-base mb-6 leading-relaxed">
-                            {card.descricao}
+                            {cartao.descricao}
                         </p>
-                        <a className={`${getButtonClasses(card.cor)} text-white px-6 py-2 rounded-lg font-semibold transition-cores duration-200`} to={card.link} href={card.link}>Acessar
+                        <a className={`${getButtonClasses(cartao.cor)} text-white px-6 py-2 rounded-lg font-semibold transition-cores duration-200`} href={cartao.link}>Acessar
                         </a>
                     </div>
                 ))}

@@ -7,7 +7,7 @@ import Filters from "./components/Filters";
 import VideoCard from "./components/VideoCard";
 import Home from "./pages/Home";
 import Videos from "./pages/Videos";
-import BaseDeConhecimento from "./pages/BaseDeConhecimento";
+import BaseDeConhecimento from "./pages/BaseConhecimento";
 import Educador from "./pages/Educador";
 import { Menu } from "lucide-react";
 
@@ -65,7 +65,6 @@ export function VideoContent() {
           {paginatedVideos.map(video => (
             <VideoCard key={video.id} video={video} />
           ))}
-          
         </div>
         
         {/* Navegador de páginas */}
@@ -98,8 +97,7 @@ export function VideoContent() {
             <button
               onClick={() => setCurrentPage(prev => Math.min(prev + 1, totalPages))}
               disabled={currentPage === totalPages}
-              className="px-4 py-2 bg-slate-900 text-white rounded disabled:bg-gray-300 disabled:cursor-not-allowed hover:bg-slate-700"
-            >
+              className="px-4 py-2 bg-slate-900 text-white rounded disabled:bg-gray-300 disabled:cursor-not-allowed hover:bg-slate-700">
               Próximo
             </button>
           </div>
