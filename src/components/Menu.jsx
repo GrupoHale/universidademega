@@ -46,13 +46,13 @@ export default function MenuLateral() {
               open={open}
               onClick={handleLinkClick}
             />
-            <MenuItem 
+            {/* <MenuItem
               icon={<User2Icon size={18} />} 
               label="Área do educador" 
               path="/educador" 
               open={open}
               onClick={handleLinkClick}
-            />
+            />*/}
           </nav>
         </aside>
       </div>
@@ -103,14 +103,14 @@ export default function MenuLateral() {
             onClick={handleLinkClick}
             mobile={true}
           />
-          <MenuItem 
+          {/* <MenuItem 
             icon={<User2Icon size={18} />} 
             label="Área do educador" 
             path="/educador" 
             open={true}
             onClick={handleLinkClick}
             mobile={true}
-          />
+          /> */}
         </nav>
       )}
     </>
