@@ -1,46 +1,48 @@
+import { Link } from "react-router-dom";
+
 export default function BaseConhecimento2() {
     const menuItems = {
         "Comece por aqui": [
-            { label: "Visão Geral de Rastreamento", href: "/base-de-conhecimento/visao-geral" },
-            { label: "Treinamento 1 - básico para funcionar", href: "/base-de-conhecimento/treinamento-1" },
-            { label: "Treinamento 2 - operacional", href: "/base-de-conhecimento/treinamento-2" },
+            { label: "Visão Geral de Rastreamento", path: "/base-conhecimento/visao-geral" },
+            { label: "Treinamento 1 - básico para funcionar", path: "/base-conhecimento/treinamento-1" },
+            { label: "Treinamento 2 - operacional", path: "/base-conhecimento/treinamento-2" },
         ],
         "Conteúdos adicionais": [
-            { label: "Operacional", href: "/base-de-conhecimento/operacional" },
-            { label: "Como tratar aertas", href: "/base-de-conhecimento/tratar-alertas" },
-            { label: "Cadastrar pessoas/usuários", href: "/base-de-conhecimento/cadastrar-usuarios" },
-            { label: "Regras", href: "/base-de-conhecimento/regras" },
-            { label: "Identificação de motorista", href: "/base-de-conhecimento/identificacao-motorista" },
-            { label: "Unidade Organizacional", href: "/base-de-conhecimento/unidade-organizacional" },
-            { label: "CNHs a vencer e vencidas", href: "/base-de-conhecimento/cnh" },
-            { label: "Áreas e rotas geográficas", href: "/base-de-conhecimento/areas-rotas" },
+            { label: "Operacional", path: "/base-conhecimento/operacional" },
+            { label: "Como tratar alertas", path: "/base-conhecimento/tratar-alertas" },
+            { label: "Cadastrar pessoas/usuários", path: "/base-conhecimento/cadastrar-usuarios" },
+            { label: "Regras", path: "/base-conhecimento/regras" },
+            { label: "Identificação de motorista", path: "/base-conhecimento/identificacao-motorista" },
+            { label: "Unidade Organizacional", path: "/base-conhecimento/unidade-organizacional" },
+            { label: "CNHs a vencer e vencidas", path: "/base-conhecimento/cnh" },
+            { label: "Áreas e rotas geográficas", path: "/base-conhecimento/areas-rotas" },
         ],
         "Conteúdos avançados": [
-            { label: "Jornada de Trabalho", href: "/base-de-conhecimento/jornada-trabalho" },
-            { label: "Performance", href: "/base-de-conhecimento/performance" },
-            { label: "Logistics", href: "/base-de-conhecimento/logistics" },
-            { label: "Videotelemetria", href: "/base-de-conhecimento/videotelemetria" },
-            { label: "Manutenção", href: "/base-de-conhecimento/manutencao" },
-            { label: "Abastecimento", href: "/base-de-conhecimento/abastecimento" },
-            { label: "Gestão de Multas", href: "/base-de-conhecimento/multas" },
-            { label: "Velocidade na Via", href: "/base-de-conhecimento/velocidade" },
+            { label: "Jornada de Trabalho", path: "/base-conhecimento/jornada-trabalho" },
+            { label: "Performance", path: "/base-conhecimento/performance" },
+            { label: "Logistics", path: "/base-conhecimento/logistics" },
+            { label: "Videotelemetria", path: "/base-conhecimento/videotelemetria" },
+            { label: "Manutenção Avançada", path: "/base-conhecimento/manutencao" },
+            { label: "Abastecimento", path: "/base-conhecimento/abastecimento" },
+            { label: "Gestão de Multas", path: "/base-conhecimento/multas" },
+            { label: "Velocidade na Via", path: "/base-conhecimento/velocidade" },
         ],
         "Aplicativos": [
-            { label: "SSX Mobile", href: "/base-de-conhecimento/ssx-mobile" },
-            { label: "SSX Onboard", href: "/base-de-conhecimento/ssx-onboard" },
+            { label: "SSX Mobile", path: "/base-conhecimento/ssx-mobile" },
+            { label: "SSX Onboard", path: "/base-conhecimento/ssx-onboard" },
         ],
         "Conteúdos especiais": [
-            { label: "Macros com SSX Onboard", href: "/base-de-conhecimento/macros-onboard" },
+            { label: "Macros com SSX Onboard", path: "/base-conhecimento/macros-onboard" },
         ],
         "Relatórios": [
-            { label: "Relatório Geral", href: "/base-de-conhecimento/relatorio-geral" },
-            { label: "Períodos de utilização BDV", href: "/base-de-conhecimento/periodos-bdv" },
-            { label: "Períodos de utilização consolidado", href: "/base-de-conhecimento/periodos-consolidado" },
-            { label: "Relatório de alertas", href: "/base-de-conhecimento/relatorio-alertas" },
-            { label: "Relatório de passagem por áreas", href: "/base-de-conhecimento/relatorio-areas" },
-            { label: "Relatórios de mensagem enviadas e recebidas (SSX Onboard)", href: "/base-de-conhecimento/relatorio-mensagens" },
-            { label: "Relatório de manutenções", href: "/base-de-conhecimento/relatorio-manutencoes" },
-            { label: "Relatório de abastecimentos", href: "/base-de-conhecimento/relatorio-abastecimentos" },
+            { label: "Relatório Geral", path: "/base-conhecimento/relatorio-geral" },
+            { label: "Períodos de utilização BDV", path: "/base-conhecimento/periodos-bdv" },
+            { label: "Períodos de utilização consolidado", path: "/base-conhecimento/periodos-consolidado" },
+            { label: "Relatório de alertas", path: "/base-conhecimento/relatorio-alertas" },
+            { label: "Relatório de passagem por áreas", path: "/base-conhecimento/relatorio-areas" },
+            { label: "Relatórios de mensagem enviadas e recebidas (SSX Onboard)", path: "/base-conhecimento/relatorio-mensagens" },
+            { label: "Relatório de manutenções", path: "/base-conhecimento/relatorio-manutencoes" },
+            { label: "Relatório de abastecimentos", path: "/base-conhecimento/relatorio-abastecimentos" },
         ]
     };
 
@@ -60,12 +62,12 @@ export default function BaseConhecimento2() {
                             <ul className="space-y-2">
                                 {items.map((item, index) => (
                                     <li key={index}>
-                                        <a 
-                                            href={item.href} 
+                                        <Link 
+                                            to={item.path} 
                                             className="text-blue-600 hover:text-blue-800 hover:underline text-sm transition-colors"
                                         >
                                             {item.label}
-                                        </a>
+                                        </Link>
                                     </li>
                                 ))}
                             </ul>
@@ -74,5 +76,5 @@ export default function BaseConhecimento2() {
                 </div>
             </div>
         </div>
-    )
+    );
 }
