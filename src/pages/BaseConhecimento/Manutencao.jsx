@@ -1,14 +1,17 @@
 export default function Manutencao() {
     return (
-        <div className="min-h-screen bg-gradient-to-b from-orange-50 to-gray-50 p-8">
-            <div className="max-w-4xl mx-auto">
-                <h1 className="text-4xl font-bold mb-8 text-orange-900">Manutenção</h1>
-                <div className="bg-white rounded-lg shadow-lg p-8 border-l-4 border-orange-600">
-                    <h2 className="text-2xl font-bold mb-6 text-orange-800">Gestão de Manutenção</h2>
+        <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-cyan-50 px-4 py-12">
+            <div className="max-w-5xl mx-auto">
+                <div className="mb-12">
+                    <h1 className="text-5xl font-bold text-gray-900 mb-4">Manutenção</h1>
+                    <div className="h-1.5 w-32 bg-gradient-to-r from-blue-500 via-cyan-500 to-blue-400 rounded-full"></div>
+                </div>
+                <div className="bg-white rounded-xl shadow-xl p-10 border border-slate-200 border-l-4 border-l-blue-500">
+                    <h2 className="text-2xl font-bold mb-6 text-blue-700">Gestão de Manutenção</h2>
                     <p className="text-gray-700 mb-6 leading-relaxed text-lg">
                         Organize e acompanhe a manutenção preventiva e corretiva da sua frota com eficiência.
                     </p>
-                    <div className="bg-orange-50 p-4 rounded-lg border-l-4 border-orange-400 mb-6">
+                    <div className="bg-blue-50 p-4 rounded-lg border-l-4 border-blue-300 mb-6">
                         <p className="text-gray-700 leading-relaxed font-medium">
                             Adicione seu conteúdo sobre manutenção aqui.
                         </p>

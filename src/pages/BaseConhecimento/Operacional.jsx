@@ -1,9 +1,12 @@
 export default function Operacional() {
     return (
-        <div className="min-h-screen bg-gray-50 p-8">
-            <div className="max-w-4xl mx-auto">
-                <h1 className="text-4xl font-bold mb-6">Operacional</h1>
-                <div className="bg-white rounded-lg shadow-md p-8">
+        <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-cyan-50 px-4 py-12">
+            <div className="max-w-5xl mx-auto">
+                <div className="mb-12">
+                    <h1 className="text-5xl font-bold text-gray-900 mb-4">Operacional</h1>
+                    <div className="h-1.5 w-32 bg-gradient-to-r from-blue-500 via-cyan-500 to-blue-400 rounded-full"></div>
+                </div>
+                <div className="bg-white rounded-xl shadow-xl p-10 border border-slate-200 border-l-4 border-l-blue-500">
                     <h2 className="text-2xl font-bold mb-4">TELA OPERACIONAL</h2>
                     <p className="text-gray-700 mb-4">
                         A tela operacional é o espaço onde o usuário visualiza os veículos de sua própria base de operações e os dados de posição enviados pelos rastreadores.
@@ -17,7 +20,7 @@ export default function Operacional() {
                         Como mostrado abaixo, a tela é dividida entre o mapa, na parte superior, e a grid, na parte inferior.
                     </p>
                     
-                    <img src="../src/pages/BaseConhecimento/img/Tela operacional.PNG" alt="Tela Operacional" className="w-full rounded-lg" />
+                    <img src="../src/Pages/BaseConhecimento/img/Tela operacional.png" alt="Tela Operacional" className="w-full rounded-lg" />
                     <br/>
                     <p>
                         O grid da tela operacional pode ter até 38 colunas que trazem os dados de posição recebidas das unidades rastreadas.
@@ -29,7 +32,7 @@ export default function Operacional() {
                     </p>
                     <br />
 
-                    <img src="../src/pages/BaseConhecimento/img/Tela operacional (dados).jpg" className="x-full rounded-lg" />
+                    <img src="../src/Pages/BaseConhecimento/img/Tela operacional (dados).jpg" className="x-full rounded-lg" />
                     <br />
                     <p>
                         1 - Lista de ações: na Lista de ações permite escolher entre as opções de Rastreamento, Histórico de Posições, Viagens e Alertas. Para utilizar qualquer uma dessas ações, é necessário selecionar uma unidade rastreada no grid:
@@ -97,7 +100,7 @@ export default function Operacional() {
                     </p>
                     <br/>
 
-                    <img src="../src/pages/BaseConhecimento/img/Tela operacional (lista de acoes).jpg" className="w-80 rounded-lg" />
+                    <img src="../src/Pages/BaseConhecimento/img/Tela Operacional (lista de acoes).jpg" className="w-80 rounded-lg" />
                     <br/>
                     <p>
                         1 - Histórico da unidade rastreada: é uma consulta que exibe, em uma grid, todas as posições enviadas pelo rastreador durante o período especificado. Além disso, mostra o trajeto percorrido pela unidade no mapa da tela operacional, permitindo uma visualização detalhada do caminho percorrido. (Clique aqui e confira a regra para consulta do histórico de posições)
