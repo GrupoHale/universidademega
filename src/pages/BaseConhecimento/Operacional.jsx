@@ -1,5 +1,6 @@
-import { React } from 'react';
 import TelaOperacional from "../../pages/BaseConhecimento/img/TelaOperacional.png";
+import TelaOperacionalDados from "../../pages/BaseConhecimento/img/TelaOperacionalDados.jpg";
+import TelaOperacionalListaAcoes from "../../pages/BaseConhecimento/img/TelaOperacionalListaDeAcoes.jpg";
 
 export default function Operacional() {
     return (
@@ -35,7 +36,7 @@ export default function Operacional() {
                     </p>
                     <br />
 
-                    <img src="../src/Pages/BaseConhecimento/img/Tela operacional (dados).jpg" className="x-full rounded-lg" />
+                    <img src={TelaOperacionalDados} className="x-full rounded-lg" />
                     <br />
                     <p>
                         1 - Lista de ações: na Lista de ações permite escolher entre as opções de Rastreamento, Histórico de Posições, Viagens e Alertas. Para utilizar qualquer uma dessas ações, é necessário selecionar uma unidade rastreada no grid:
@@ -103,7 +104,7 @@ export default function Operacional() {
                     </p>
                     <br/>
 
-                    <img src="../src/Pages/BaseConhecimento/img/Tela Operacional (lista de acoes).jpg" className="w-80 rounded-lg" />
+                    <img src={TelaOperacionalListaAcoes} className="w-80 rounded-lg" />
                     <br/>
                     <p>
                         1 - Histórico da unidade rastreada: é uma consulta que exibe, em uma grid, todas as posições enviadas pelo rastreador durante o período especificado. Além disso, mostra o trajeto percorrido pela unidade no mapa da tela operacional, permitindo uma visualização detalhada do caminho percorrido. (Clique aqui e confira a regra para consulta do histórico de posições)
