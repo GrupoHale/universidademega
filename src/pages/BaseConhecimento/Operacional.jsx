@@ -1,3 +1,6 @@
+import { React } from 'react';
+import TelaOperacional from "../../pages/BaseConhecimento/img/telaOperacional.png";
+
 export default function Operacional() {
     return (
         <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-cyan-50 px-4 py-12">
@@ -20,7 +23,7 @@ export default function Operacional() {
                         Como mostrado abaixo, a tela é dividida entre o mapa, na parte superior, e a grid, na parte inferior.
                     </p>
                     
-                    <img src="../src/Pages/BaseConhecimento/img/Tela operacional.png" alt="Tela Operacional" className="w-full rounded-lg" />
+                    <img src={TelaOperacional} alt="Tela Operacional" className="w-full rounded-lg" />
                     <br/>
                     <p>
                         O grid da tela operacional pode ter até 38 colunas que trazem os dados de posição recebidas das unidades rastreadas.
