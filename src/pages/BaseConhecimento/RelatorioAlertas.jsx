@@ -3,7 +3,7 @@ import RelatorioDeAlertas from "../../pages/BaseConhecimento/img/RelatorioDeAler
 import RelatorioGeralIcones from "../../pages/BaseConhecimento/img/RelatorioGeralIcones.png";
 import IconeSeletorColunas from "../../pages/BaseConhecimento/img/IconeSeletorColunas.png";
 import IconeExportarExcel from "../../pages/BaseConhecimento/img/IconeExportarExcel.png";
-import IconeExportarPDf from "../../pages/BaseConhecimento/img/IconeExportarPDf.png";
+import IconeExportarPDf from "../../pages/BaseConhecimento/img/IconeExportarPDF.png";
 
 export default function RelatorioAlertas() {
     
