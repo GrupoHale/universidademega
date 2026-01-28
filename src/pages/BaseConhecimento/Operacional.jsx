@@ -1,5 +1,5 @@
 import { React } from 'react';
-import TelaOperacional from "../../pages/BaseConhecimento/img/telaOperacional.png";
+import TelaOperacional from "../../pages/BaseConhecimento/img/TelaOperacional.png";
 
 export default function Operacional() {
     return (
