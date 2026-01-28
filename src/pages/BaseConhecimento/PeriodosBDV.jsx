@@ -1,3 +1,8 @@
+import PeriodoDeUtilizacao from "../../pages/BaseConhecimento/img/PeriodoDeUtilizacao.jpg";
+import FaixaVelocidades from "../../pages/BaseConhecimento/img/FaixaVelocidades.jpg";
+import RelatorioBDVColunas from "../../pages/BaseConhecimento/img/RelatorioBDVColunas.jpg";
+import FiltroParaColunas from "../../pages/BaseConhecimento/img/FiltroParaColunas.jpg";
+
 export default function PeriodosBDV() {
     return (
         <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-cyan-50 px-4 py-12">
@@ -15,7 +20,7 @@ export default function PeriodosBDV() {
                         O BDV organiza as informações em períodos de utilização. Mas o que isso significa? Cada período começa quando a ignição do veículo é ligada e termina quando ela é desligada. Simples, certo?
                     </p>
                     <br/>
-                    <img src="../../src/pages/BaseConhecimento/img/PeriodoDeUtilizacao.jpg" alt="" />
+                    <img src={PeriodoDeUtilizacao} alt="" />
                     <br/>
                     <p>
                         Mas você pode personalizar essa condicional, que define quando começa e termina um período, por:
@@ -41,13 +46,13 @@ export default function PeriodosBDV() {
                         <li><span className="font-bold">Faixas de Velocidade: </span>Quanto tempo o veículo passou em cada uma das quatro faixas predefinidas:</li>
                     </div>
                     <br/>
-                    <img src="../../src/pages/BaseConhecimento/img/FaixaVelocidades.jpg" alt="" />
+                    <img src={FaixaVelocidades} alt="" />
                     <br/>
                     <p>
                         Essas colunas não apenas fornecem dados, mas desenvolvem o perfil de utilização de cada veículo, ajudando a identificar padrões e anomalias.
                     </p>
                     <br/>
-                    <img src=".././src/pages/BaseConhecimento/img/RelatorioBDVColunas.jpg" alt="" />
+                    <img src={RelatorioBDVColunas} alt="" />
                     <br/>
                     <h2>Personalização e Usabilidade na Grid</h2>
                     <br/>
@@ -80,7 +85,7 @@ export default function PeriodosBDV() {
                     Após a consulta no BDV, o relatório pode ser exportado em PDF ou Excel, facilitando o compartilhamento e a análise posterior. E, para refinar ainda mais sua pesquisa, o BDV oferece a possibilidade de filtrar dados em cada coluna. Isso significa que você pode focar exatamente no que precisa, sem perder tempo navegando por informações irrelevantes.
                 </p>
                 <br/>
-                <img src="../../src/pages/BaseConhecimento/img/FiltroParaColunas.jpg" alt="" />
+                <img src={FiltroParaColunas} alt="" />
                 <br/>
                 <h2 className="font-bold" >Por que o BDV é o relatório certo para sua frota?</h2>
                 <br/>

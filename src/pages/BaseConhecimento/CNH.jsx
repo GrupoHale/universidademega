@@ -1,3 +1,6 @@
+import CadastrarCNH from "../../pages/BaseConhecimento/img/CadastrarCNH.png";
+import VisualizarCNHvencidas from "../../pages/BaseConhecimento/img/VisualizarCNHvencidas.png";
+
 export default function CNH() {
     return (
         <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-cyan-50 px-4 py-12">
@@ -108,7 +111,7 @@ export default function CNH() {
                             </ul>
                         </p>
                         <br/>
-                        <img src="../../src/pages/BaseConhecimento/img/CadastrarCNH.png" alt="" />
+                        <img src={CadastrarCNH} alt="" />
                         <br/>
                         <h2>Onde visualizar</h2>
                         <br/>
@@ -116,7 +119,7 @@ export default function CNH() {
                             Para a visualização deste painel, basta acessar a Tela Inicial de sua base, com uma porcentagem indicando quantos estão próximas a vencer e quais estão vencidas:
                         </p>
                         <br/>
-                        <img src="../../src/pages/BaseConhecimento/img/VisualizarCNHvencidas.png" alt=""/>
+                        <img src={VisualizarCNHvencidas} alt=""/>
                         <br/>
                         <p><span className="font-bold">Observação: </span>Essa funcionalidade não é integrada com o orgão de trânsito, portanto caso o motorista tenha renovado a CNH será necessário atualizar o cadastro manualmente no sistema.</p>
                     </div>

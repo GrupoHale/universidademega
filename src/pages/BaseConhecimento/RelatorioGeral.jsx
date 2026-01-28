@@ -1,3 +1,9 @@
+import RelatorioGeralFiltros from "../../pages/BaseConhecimento/img/RelatorioGeralFiltros.png";
+import RelatorioGeralIcones from "../../pages/BaseConhecimento/img/RelatorioGeralIcones.png";
+import IconeSeletorColunas from "../../pages/BaseConhecimento/img/IconeSeletorColunas.png";
+import IconeExportarExcel from "../../pages/BaseConhecimento/img/IconeExportarExcel.png";
+import IconeExportarPDf from "../../pages/BaseConhecimento/img/IconeExportarPDf.png";
+
 export default function RelatorioGeral() {
 
     const styleColunas = "transition-transform duration-50 hover:text-blue-800 font-bold hover:scale-105";
@@ -27,7 +33,7 @@ export default function RelatorioGeral() {
                             Ao acessar o relatório irá abrir a tela de filtros onde você pode estar escolhendo os parâmetros do relatório.
                         </p>
                         <br/>
-                        <img src="../../src/pages/BaseConhecimento/img/RelatorioGeralFiltros.png" alt="" />
+                        <img src={RelatorioGeralFiltros} alt="" />
                         <br/>
                         <p>Após definir os filtros, clique em <span className="font-bold" >Consultar</span></p>
                         <br/>
@@ -89,23 +95,23 @@ export default function RelatorioGeral() {
                             <br/>
                         <p>No cabeçalho do relatório temos alguns icones, onde conseguimos adicionar  ou remover colunas no grid, exportar o relatório via excel e PDF</p>
                         <br/>
-                        <img src="../../src/pages/BaseConhecimento/img/RelatorioGeralIcones.png" alt="" />
+                        <img src={RelatorioGeralIcones} alt="" />
                         <br/>
                         <div className="space-y-1">
                             <div className="flex space-y-1.5 space-x-1">
-                                <img className="hover:scale-105" src="../../src/pages/BaseConhecimento/img/IconeSeletorColunas.png" alt="" />
+                                <img className="hover:scale-105" src={IconeSeletorColunas} alt="" />
                                 <p className="font-bold" >
                                     Seletor de colunas - Adicionar ou remover colunas do grid
                                 </p>
                             </div>
                             <div className="flex space-y-1.5 space-x-1" >
-                                <img className="hover:scale-105" src="../../src/pages/BaseConhecimento/img/IconeExportarExcel.png" alt="" />
+                                <img className="hover:scale-105" src={IconeExportarExcel} alt="" />
                                 <p className="font-bold" >
                                     Exportar Excel - Exportar o relatório em excel
                                 </p>
                             </div>
                             <div className="flex space-y-1.5 space-x-1" >
-                                <img className="hover:scale-105" src="../../src/pages/BaseConhecimento/img/IconeExportarPDf.png" alt="" />
+                                <img className="hover:scale-105" src={IconeExportarPDf} alt="" />
                                 <p className="font-bold" >
                                     Exportar PDF - Exportar o relatório em PDF
                                 </p>

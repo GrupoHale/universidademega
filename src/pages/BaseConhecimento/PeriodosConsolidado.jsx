@@ -1,3 +1,6 @@
+import PeriodoDeUtilizacaoConsolidado from "../../pages/BaseConhecimento/img/PeriodoDeUtilizacaoConsolidado.png";
+import PeriodoDeUtilizacaoConsolidado2 from "../../pages/BaseConhecimento/img/PeriodoDeUtilizacaoConsolidado2.png";
+
 export default function PeriodosConsolidado() {
     return (
         <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-cyan-50 px-4 py-12">
@@ -13,7 +16,7 @@ export default function PeriodosConsolidado() {
                     <p>
                         Para acessar o relatório de Períodos de Utilização Consolidado, abre o menu de relatórios e seleciona a opção "Períodos de Utilização Consolidado".
                     </p>
-                    <img src="../../src/pages/BaseConhecimento/img/PeriodoDeUtilizacaoConsolidado.png" alt="" />
+                    <img src={PeriodoDeUtilizacaoConsolidado} alt="" />
                     <br/>
                     <p>
                         Esse relatório é bem parecido com o relatório de Períodos de Utilização do BDV, mas com algumas diferenças importantes:
@@ -31,7 +34,7 @@ export default function PeriodosConsolidado() {
                         <li><span className="font-bold">Todo o periodo:</span> O sistema irá mostrar os dados consolidados para todo o período selecionado.</li>
                     </ul>
                     <br/>
-                    <img src="../src/pages/BaseConhecimento/img/PeriodoDeUtilizacaoConsolidado2.png" alt="" />
+                    <img src={PeriodoDeUtilizacaoConsolidado2} alt="" />
                     <br/>
                     <p>
                         Após a consulta, com a tabela do relatório já disponível, também é possível filtrar dados específicos em cada coluna.

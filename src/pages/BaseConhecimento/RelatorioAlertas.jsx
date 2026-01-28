@@ -1,3 +1,10 @@
+import RelatorioDeAlertas2 from "../../pages/BaseConhecimento/img/RelatorioDeAlertas2.png";
+import RelatorioDeAlertas from "../../pages/BaseConhecimento/img/RelatorioDeAlertas.png";
+import RelatorioGeralIcones from "../../pages/BaseConhecimento/img/RelatorioGeralIcones.png";
+import IconeSeletorColunas from "../../pages/BaseConhecimento/img/IconeSeletorColunas.png";
+import IconeExportarExcel from "../../pages/BaseConhecimento/img/IconeExportarExcel.png";
+import IconeExportarPDf from "../../pages/BaseConhecimento/img/IconeExportarPDf.png";
+
 export default function RelatorioAlertas() {
     
 const styleColunas = "transition-transform duration-50 hover:text-blue-800 font-bold hover:scale-105";
@@ -18,7 +25,7 @@ const styleColunas = "transition-transform duration-50 hover:text-blue-800 font-
                         Para acessar o relatório é bem simples, basta abrir o menu de relatórios e selecionar <span className="font-bold">Alertas e notificações</span>
                     </p>
                     <br/>
-                    <img src="../../src/pages/BaseConhecimento/img/RelatorioDeAlertas2.png" alt="" />
+                    <img src={RelatorioDeAlertas2} alt="" />
                     <br/>
                     <p>
                          Esse relatório exibe o histórico das regras violadas de acordo com os filtros realizados pelo usuário, independente se a regra requer tratamento ou não.
@@ -33,7 +40,7 @@ const styleColunas = "transition-transform duration-50 hover:text-blue-800 font-
                     </p>
                     <br/>
                     <h2>Veja abaixo a visualização desse relatório com algumas regras violadas.</h2>
-                    <img src="../../src/pages/BaseConhecimento/img/RelatorioDeAlertas.png" alt="" />
+                    <img src={RelatorioDeAlertas} alt="" />
                     <br/>
                     <p>
                         Se você quer um relatório que informe todos os alertas e notificações geradas num período selecionado, com os respectivos nomes das regras violadas, data e hora das ocorrências, se foram tratadas ou não, entre outras informações então o relatório Alertas e Notificações servirá para você.
@@ -45,24 +52,24 @@ const styleColunas = "transition-transform duration-50 hover:text-blue-800 font-
                     <br/>
                     <p>No cabeçalho do relatório temos alguns icones, onde conseguimos adicionar  ou remover colunas no grid, exportar o relatório via excel e PDF</p>
                     <br/>
-                    <img src="../../src/pages/BaseConhecimento/img/RelatorioGeralIcones.png" alt="" />
+                    <img src={RelatorioGeralIcones} alt="" />
                     <br/>
                     
                     <div className="space-y-1">
                         <div className="flex space-y-1.5 space-x-1">
-                            <img className="hover:scale-105" src="../../src/pages/BaseConhecimento/img/IconeSeletorColunas.png" alt="" />
+                            <img className="hover:scale-105" src={IconeSeletorColunas} alt="" />
                             <p className="font-bold" >
                                 Seletor de colunas - Adicionar ou remover colunas do grid
                             </p>
                         </div>
                         <div className="flex space-y-1.5 space-x-1" >
-                            <img className="hover:scale-105" src="../../src/pages/BaseConhecimento/img/IconeExportarExcel.png" alt="" />
+                            <img className="hover:scale-105" src={IconeExportarExcel} alt="" />
                             <p className="font-bold" >
                                 Exportar Excel - Exportar o relatório em excel
                             </p>
                         </div>
                         <div className="flex space-y-1.5 space-x-1" >
-                            <img className="hover:scale-105" src="../../src/pages/BaseConhecimento/img/IconeExportarPDf.png" alt="" />
+                            <img className="hover:scale-105" src={IconeExportarPDf} alt="" />
                             <p className="font-bold" >
                                 Exportar PDF - Exportar o relatório em PDF
                             </p>

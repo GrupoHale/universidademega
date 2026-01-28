@@ -1,3 +1,6 @@
+import AtivarVelocidadeNaVia from "../../pages/BaseConhecimento/img/AtivarVelocidadeNaVia.png";
+import ConfirmarRegraVelocidadeVia from "../../pages/BaseConhecimento/img/ConfirmarRegraVelocidadeVia.png";
+
 export default function Velocidade() {
     return (
         <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-cyan-50 px-4 py-12">
@@ -53,17 +56,17 @@ export default function Velocidade() {
                             Para ativar a velocidade na via nos veículos, acesse as informações do veículo e habilite a opção <strong>Controlar velocidade da via</strong>.
                         </p>
                         <br/>
-                        <img src="../src/pages/BaseConhecimento/img/Ativar Velocidade Na Via.png" alt="" />
+                        <img src={AtivarVelocidadeNaVia} alt="" />
                         <br/>
                         <h2>Confirmando a criação da regra</h2>
                         <br/>
                         <p>
                             Concluídas essas etapas, uma regra será criada no ambiente específico do cliente e associada a todos os veículos selecionados.
 
-                            Para confirmar, basta acessar a opção “Regras” na base desse cliente (através da personificação) e verificar os detalhes:
+                            Para confirmar, basta acessar a opção "Regras" na base desse cliente (através da personificação) e verificar os detalhes:
                         </p>
                         <br/>
-                        <img src="../src/Pages/BaseConhecimento/img/ConfirmarRegraVelocidadeVia.png" alt=""/>
+                        <img src={ConfirmarRegraVelocidadeVia} alt=""/>
                     </div>
                 </div>
             </div>
