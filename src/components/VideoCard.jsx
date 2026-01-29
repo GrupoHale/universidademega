@@ -2,12 +2,12 @@ export default function VideoCard({ video }) {
   return (
     <div className="bg-white rounded-xl shadow overflow-hidden">
       <iframe
-        className="w-full h-48"
+        className="w-full h-48 hover:scale-105 transition-transform duration-300"
         src={`https://www.youtube.com/embed/${video.youtubeId}`}
         allowFullScreen
       />
-
-      <div className="p-4">
+    
+    <div className="p-4">
         <span className="text-xs bg-blue-100 text-blue-600 px-2 py-1 rounded">
           {video.category}
         </span>

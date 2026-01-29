@@ -10,7 +10,6 @@ import Videos from "./pages/Videos";
 import BaseDeConhecimento from "./pages/BaseConhecimento";
 import Educador from "./pages/Educador";
 
-// Importar todas as páginas de Base de Conhecimento
 import VisaoGeral from "./pages/BaseConhecimento/VisaoGeral";
 import Treinamento1 from "./pages/BaseConhecimento/Treinamento1";
 import Treinamento2 from "./pages/BaseConhecimento/Treinamento2";
