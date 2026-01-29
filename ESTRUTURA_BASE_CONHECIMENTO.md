@@ -72,7 +72,6 @@ Todas as rotas estão configuradas em `src/App.jsx` com o seguinte padrão:
 ```
 /base-conhecimento/{slug-do-item}
 ```
-
 ## Navegação
 
 A navegação principal está em `src/components/BaseConhecimento2.jsx` que exibe todos os itens do menu com links para as respectivas páginas.

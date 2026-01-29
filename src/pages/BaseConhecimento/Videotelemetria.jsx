@@ -1,3 +1,8 @@
+import TelaOperacionalVideotelemetria from "../../pages/BaseConhecimento/img/TelaOperacionalVideotelemetria.png";
+import TelaOperacionalVideotelemetria2 from "../../pages/BaseConhecimento/img/TelaOperacionalVideotelemetria2.png";
+import TelaOperacionalVideotelemetria3 from "../../pages/BaseConhecimento/img/TelaOperacionalVideotelemetria3.png";
+import GifVideotelemetria from "../../pages/BaseConhecimento/img/GitVideotelemetria.gif";
+
 export default function Videotelemetria() {
     return (
         <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-cyan-50 px-4 py-12">
@@ -29,91 +34,57 @@ export default function Videotelemetria() {
                             Essa tecnologia contribui para a prevenção de incidentes e a otimização das operações, tornando o gerenciamento mais eficiente e seguro.
                         </p>
                         <br/>
-                        <h2>1 - Como solicitar playback?</h2>
+                        <h2>Premissas</h2>
                         <br/>
                         <p>
-                            Passo 1 - Acesse a tela de gerenciamento da Videotelemetria
-                            Passo 2 - Mude função para ver a tela de Playback
-                            Passo 3 - No canto superior direito clique no +
-                            Passo 4 - Quando a tela de solicitação abrir defina: - Unidade Rastreada - Tipo de consulta - Filtro de datas - Minutos - Câmera
-                            Passo 5 - Para concluir a requisição clique em Solicitar mídia.
-                            Essa solicitação funciona como um comando no sistema, que tenta se comunicar com a câmera a cada 5 minutos para baixar os vídeos. Se após 7 dias os vídeos não forem carregados, o comando é automaticamente cancelado
+                            Este material apresenta as funcionalidades e os recursos do módulo de Videotelemetria, garantindo uma utilização otimizada e alinhada às necessidades operacionais.
                         </p>
                         <br/>
-                        <h2>Como ver a midia de um playback já requisitado?</h2>
+                        <h2>Tela Operacional</h2>
                         <br/>
                         <p>
-                            Você pode ver um vídeo de playback de duas formas, pela Galeria de Mídias ou pela tela de Solicitações de mídias:
-                            Pela galeria de mídias:
-                            Passo 1 - Acesse a tela de gerenciamento da Videotelemetria
-                            Passo 2 - Mude função para ver a tela de Playback
-                            Passo 3 - Nos menus de filtros da lateral direita marque a caixa box “Somente playbacks”
-                            Passo 4 - Clique em “Consultar”
-                            Pela tela de Solicitações de mídias:
-                            Passo 1 - Acesse a tela de gerenciamento da Videotelemetria
-                            Passo 2 - Mude função para ver a tela de Playback
-                            Passo 3 - Entre na tela “Solicitações de mídias”
-                            Passo 4 - Localize a mídia desejada na grid
-                            Passo 5 - Clique na seta de contexto no início da linha
-                            Passo 6 - Clique em “Ver mídias”
-                        </p>
-                        <h2>Como baixar um video gravado na galeria</h2>
-                        <br/>
-                        <p>
-                            Passo 1 - Acesse a tela de gerenciamento da Videotelemetria
-                            Passo 2 - Mude função para ver a tela de Playback
-                            Passo 3 - Realize o filtro e busque a mídia desejada
-                            Passo 4 - Clique no menu de contexto da mídia que é representado por uma setinha Clique em “Baixar”
-                        </p>
-                        <h2>Onde vejo a quantidade de espaço utilizado com armazenamento de mídias?</h2>
-                        <br/>
-                        <p>
-                            Você pode ver a quantidade de espaço utilizado no dashboard Média de dias de armazenamento na coluna “Total de armazenamento (GB)”.
-                        </p>
-                        <h2>O que acontece quando o armazenamento atinge seu limite?</h2>
-                        <br/>
-                        <p>
-                            Quando o armazenamento atinge seu limite, as novas gravações substituem automaticamente as mídias mais antigas.
+                            O monitoramento ao vivo das câmeras instaladas em um veículo pode ser realizado diretamente pela tela operacional.
                         </p>
                         <br/>
-                        <h2>É possível aumentar o tempo que o video fica na tela de gerenciamento da videotelemetria?</h2>
                         <p>
-                            Não é possível modificar a duração em que o streaming ao vivo permanece aberto na tela de Videotelemetria, sendo a configuração padrão de 5 minutos. A visão do streaming ao vivo sem limitação de tempo é possível na tela operacional.
+                            Nessa interface, um ícone de câmera clicável é exibido ao lado dos veículos que possuem câmera:
                         </p>
                         <br/>
-                        <h2>Qual é o significado de cada resultado em uma solicitação de playback?</h2>
+                        <img src={TelaOperacionalVideotelemetria} alt="" />
+                        <br/>
                         <p>
-                            Baixados: Mídias encontradas e transferidas para o SSX com sucesso.
-                            Pendentes: Solicitações ainda em andamento, aguardando conclusão.
-                            Não encontrados: Mídias inexistentes no equipamento de acordo com o filtro aplicado.
-                            Falha: Solicitações que não puderam ser concluídas devido a problemas na comunicação entre o sistema e o equipamento, resultando na impossibilidade de gerar a mídia.
-                            Cancelados: Solicitações interrompidas por dois motivos possíveis: expiração do prazo de 7 dias ou falha do rastreador em enviar o arquivo após 12 tentativas, mesmo com o comando aceito.
+                            Ao clicar no ícone, o sistema tentará estabelecer a conexão com a câmera em até três tentativas.
                         </p>
                         <br/>
-                        <h2>Qual o significado das colunas do dashboard Média de dias de armazenamento?</h2>
                         <p>
-                            Cliente: Nome do cliente associado à unidade rastreada.
-                            Unidade Rastreada: Identificação da unidade rastreada.
-                            Total de mídias: Quantidade total de arquivos de mídia (vídeos/imagens) armazenados pela unidade rastreada.
-                            Dias de armazenamento: Quantidade média de dias em que as mídias desse veículo ficam armazenadas no sistema.
-                            Mídia mais antiga: Data da mídia mais antiga armazenada.
-                            Unidade Organizacional: Unidade organizacional onde este veículo e cliente pertencem.
-                            Grupo: Grupo de unidades rastreadas que este veículo pertence.
-                            ------------------------------ Mídias de playback ------------------------------
-                            Quantidade: Quantidade de mídias advindas de playback.
-                            Armazenamento (GB): Quantidade de armazenamento, em GB, que estas mídias ocupam.
-                            ------------------------------ Mídias de eventos ------------------------------
-                            Quantidade: Quantidade de mídias advindas de eventos.
-                            Armazenamento (GB): Quantidade de armazenamento, em GB, que estas mídias ocupam.
-                            ------------------------------ Mídias de violações------------------------------
-                            Quantidade: Quantidade de mídias advindas de violações.
-                            Armazenamento (GB): Quantidade de armazenamento, em GB, que estas mídias ocupam.
-                            ------------------------------ Mídias de arquivadas ------------------------------
-                            Quantidade: Quantidade de mídias arquivadas.
-                            Armazenamento (GB): Quantidade de armazenamento, em GB, que estas mídias ocupam.
-                            Total de armazenamento (GB): Soma total do espaço ocupado por todas as mídias da unidade rastreada.
-                            Armazenamento padrão (GB): Espaço de armazenamento contratado como padrão para o cliente.
-                            Armazenamento extra (GB): Espaço adicional de armazenamento concedido ao cliente.
+                            Caso a conexão seja bem-sucedida, será possível visualizar, em tempo real, os ângulos disponíveis captados pela câmera, por um período indeterminado:  
+                        </p>
+                        <img src={TelaOperacionalVideotelemetria2} alt="" />
+                        <br/>
+                        <p>
+                            Além disso, eventos específicos que geram mídias, como 'Distração', podem ser acessados no histórico de posições, permitindo uma análise detalhada de ocorrências registradas, filtrando através da coluna ‘Evento’:
+                        </p>
+                        <br/>
+                        <img src={TelaOperacionalVideotelemetria3} alt="" />
+                        <br/>
+                        <h2>Tela de Gerenciamento (Ao Vivo e Playback)</h2>
+                        <br/>
+                        <p>
+                            A Tela de Gerenciamento é a principal interface para a administração do módulo de Videotelemetria, oferecendo ferramentas completas para monitoramento, configuração e análise de dados.
+                        </p>
+                        <br/>
+                        <p>
+                            Por padrão, essa tela apresenta a opção 'Playback' ativada, mas é possível alternar para o modo 'Ao Vivo' conforme a necessidade:
+                        </p>
+                        <br/>
+                        <img src={GifVideotelemetria} alt="" />
+                        <br/>
+                        <p>
+                            No modo 'Ao Vivo', você pode criar um mosaico com até 16 telas, permitindo a visualização simultânea de diferentes câmeras e ângulos associados à base do cliente.
+                        </p>
+                        <br/>
+                        <p>
+                            Essa funcionalidade oferece uma visão consolidada e estratégica das operações em tempo real:
                         </p>
                     </div>
                 </div>

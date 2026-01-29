@@ -40,7 +40,7 @@ export default function BaseConhecimento2() {
             { label: "Períodos de utilização consolidado", path: "/base-conhecimento/periodos-consolidado" },
             { label: "Relatório de alertas", path: "/base-conhecimento/relatorio-alertas" },
             { label: "Relatório de passagem por áreas", path: "/base-conhecimento/relatorio-areas" },
-            { label: "Relatórios de mensagem enviadas e recebidas (SSX Onboard)", path: "/base-conhecimento/relatorio-mensagens" },
+            { label: "Relatório de mensagem enviadas e recebidas (SSX Onboard)", path: "/base-conhecimento/relatorio-mensagens" },
             { label: "Relatório de manutenções", path: "/base-conhecimento/relatorio-manutencoes" },
             { label: "Relatório de abastecimentos", path: "/base-conhecimento/relatorio-abastecimentos" },
         ]
