@@ -193,7 +193,6 @@ export default function Videotelemetria() {
                                         <li><strong>Falha: </strong>Solicitações que não puderam ser concluídas devido a problemas na comunicação entre o sistema e o equipamento, resultando na impossibilidade de gerar a mídia.</li>
 
                                         <li><strong>Cancelados: </strong>Solicitações interrompidas por dois motivos possíveis: expiração do prazo de 7 dias ou falha do rastreador em enviar o arquivo após 12 tentativas, mesmo com o comando aceito.</li>
-
                                     </ul>
                                 </div>
                             </div>

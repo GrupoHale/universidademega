@@ -40,6 +40,8 @@ import RelatorioAreas from "./pages/BaseConhecimento/RelatorioAreas";
 import RelatorioMensagens from "./pages/BaseConhecimento/RelatorioMensagens";
 import RelatorioManutencoes from "./pages/BaseConhecimento/RelatorioManutencoes";
 import RelatorioAbastecimentos from "./pages/BaseConhecimento/RelatorioAbastecimentos";
+import ManutencaoBasica from "./pages/BaseConhecimento/ManutencaoBasica";
+import ManutencaoAvancada from "./pages/BaseConhecimento/ManutencaoAvancada";
 
 import { Menu } from "lucide-react";
 
@@ -181,6 +183,8 @@ export default function App() {
       <Route path="/base-conhecimento/relatorio-mensagens" element={<RelatorioMensagens />} />
       <Route path="/base-conhecimento/relatorio-manutencoes" element={<RelatorioManutencoes />} />
       <Route path="/base-conhecimento/relatorio-abastecimentos" element={<RelatorioAbastecimentos />} />
+      <Route path="/base-conhecimento/manutencao-basica" element={<ManutencaoBasica />} />
+      <Route path="/base-conhecimento/manutencao-avancada" element={<ManutencaoAvancada />} />
     </Routes>
   );
 }

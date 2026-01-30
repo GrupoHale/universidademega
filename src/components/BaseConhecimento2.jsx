@@ -22,7 +22,7 @@ export default function BaseConhecimento2() {
             { label: "Performance", path: "/base-conhecimento/performance" },
             { label: "Logistics", path: "/base-conhecimento/logistics" },
             { label: "Videotelemetria", path: "/base-conhecimento/videotelemetria" },
-            { label: "Manutenção Avançada", path: "/base-conhecimento/manutencao" },
+            { label: "Manutenções", path: "/base-conhecimento/manutencao" },
             { label: "Abastecimento", path: "/base-conhecimento/abastecimento" },
             { label: "Gestão de Multas", path: "/base-conhecimento/multas" },
             { label: "Velocidade na Via", path: "/base-conhecimento/velocidade" },
