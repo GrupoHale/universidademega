@@ -14,15 +14,7 @@ export default function JornadaTrabalho() {
                     <div className="bg-blue-50 p-4 rounded-lg border-l-4 border-blue-300 mb-6">
                         <p className="text-gray-700 leading-relaxed font-medium">
                             A Jornada de Trabalho no SSX é um módulo desenvolvido para facilitar o gerenciamento do tempo de trabalho dos motoristas, garantindo conformidade com as normas trabalhistas e promovendo maior transparência na operação. Com ele, é possível monitorar de forma automatizada a carga horária, intervalos, horas extras e períodos de descanso, otimizando processos e reduzindo riscos para a empresa.
-                        </p>
-                        <br/>
-                        <h2></h2>
-                        <br/>
-                        <p>
-                            <span>
-                                
-                            </span>
-                        </p>
+                        </p>    
                     </div>
                 </div>
             </div>

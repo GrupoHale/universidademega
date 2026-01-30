@@ -81,7 +81,7 @@ const styleColunas = "transition-transform duration-50 hover:text-blue-800 font-
                     </p>
                     <br/>
                     <br/>
-                    <h2 className="font-bold">COLUNAS DO RELATÓRIO DE ALERTAS E NOTIFICAÇÕES</h2>
+                    <h2 className="font-bold text-xl">COLUNAS DO RELATÓRIO DE ALERTAS E NOTIFICAÇÕES</h2>
                     <div className= "grid grid-cols-3 gap-4 p-5">
                         <li className={styleColunas}>Unidade Rastreada</li>
                         <li className={styleColunas}>Grupo de unidades rastreadas</li>

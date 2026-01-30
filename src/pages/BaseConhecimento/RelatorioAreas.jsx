@@ -13,31 +13,23 @@ export default function RelatorioAreas() {
                     <p className="text-gray-700 mb-4">
                         Traz o registro de vezes que os veículos da base passaram por uma área criada e configurada com a categoria Relatório de passagem e produção em áreas.
                     </p>
-                    <br/>
                     <p>
                         Se você quer um relatório que detalhe o registro cada vez que o veículo passar por uma área ou rota que a central definiu então o relatório Passagem por áreas é recomendado pra você.
                     </p>
-                    <br/>
                     <p>
                         Após a consulta, com a tabela do relatório já disponível, também é possível filtrar dados específicos em cada coluna.
                     </p>
-                    <br/>
                     <p>
                         Segue abaixo a relação com os nomes das colunas desse relatório.
                     </p>
-                    <br/>
-                    <h2 className="font-bold" >Observação:</h2>
-                    <br/>
+                    <h2 className="font-bold text-xl" >Observação:</h2>
                     <p>
                         Os relatórios de Passagem por Áreas ficam armazenados e acessíveis por até 3 meses.
                     </p>
-                    <br/>
                     <p>
                         Após esse periodo os dados serão removidos do sistema e não poderão mais ser consultados.
                     </p>
-                    <br/>
                     <h2 className="text-2xl font-bold mb-4">COLUNAS DO RELATÓRIO DE PASSAGENS POR ÁREAS</h2>
-                    <br/>
                     <div className="grid grid-cols-3 gap-4 p-5">
                         <li className={styleColunas}>Unidade rastreada</li>
                         <li className={styleColunas}>Data do evento</li>
