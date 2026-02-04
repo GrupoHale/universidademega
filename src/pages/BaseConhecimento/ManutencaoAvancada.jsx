@@ -19,7 +19,7 @@ import CadastrarMotivo from '../../pages/BaseConhecimento/img/CadastrarMotivo.jp
 import CancelamentoItem from '../../pages/BaseConhecimento/img/CancelamentoItem.jpg'
 import RealizarManutencao5 from '../../pages/BaseConhecimento/img/RealizarManutencao5.jpg'
 import RealizarManutencao6 from '../../pages/BaseConhecimento/img/RealizarManutencao6.jpg'
-import RealizarManutencao7 from '../../pages/BaseConhecimento/img/Realizarmanutencao7.jpg'
+import RealizarManutencao7 from '../../pages/BaseConhecimento/img/RealizarManutencao7.jpg'
 import ExcluirManutencao from '../../pages/BaseConhecimento/img/ExcluirManutencao.jpg'
 import RelatorioDeManutencao from '../../pages/BaseConhecimento/img/RelatorioDeManutencao.png'
 import RelatorioDeManutencao2 from '../../pages/BaseConhecimento/img/RelatorioDeManutencao2.png'
