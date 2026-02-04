@@ -12,7 +12,7 @@ export default function MenuLateral() {
   return (
     <>
       {/* Desktop Menu */}
-      <div className="hidden md:flex h-screen fixed bg-gray-100">
+      <div className="hidden z-10 md:flex h-screen fixed bg-gray-100">
         <aside
           className={`bg-slate-900 text-white transition-all duration-300 ${open ? "w-64" : "w-16"}`}>
           <div className="flex items-center justify-between p-5 border-b border-slate-500">
