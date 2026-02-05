@@ -131,7 +131,7 @@ export default function Eficiencia() {
                                 <p className="font-bold text-xl" >
                                     Fórmula:
                                 </p>
-
+                                
                                 <img src={CalculoAutonomia} alt="" />
                             </div>
                         </div>
