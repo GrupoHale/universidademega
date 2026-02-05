@@ -42,6 +42,10 @@ import RelatorioManutencoes from "./pages/BaseConhecimento/RelatorioManutencoes"
 import RelatorioAbastecimentos from "./pages/BaseConhecimento/RelatorioAbastecimentos";
 import ManutencaoBasica from "./pages/BaseConhecimento/ManutencaoBasica";
 import ManutencaoAvancada from "./pages/BaseConhecimento/ManutencaoAvancada";
+import AbastecimentoMobile from './pages/BaseConhecimento/AbastecimentoMobile'
+import AbastecimentoWeb from './pages/BaseConhecimento/AbastecimentoWeb'
+import AbastecimentoOnboard from './pages/BaseConhecimento/AbastecimentoOnboard'
+import Eficiencia from './pages/BaseConhecimento/Eficiencia'
 
 import { Menu } from "lucide-react";
 
@@ -185,6 +189,10 @@ export default function App() {
       <Route path="/base-conhecimento/relatorio-abastecimentos" element={<RelatorioAbastecimentos />} />
       <Route path="/base-conhecimento/manutencao-basica" element={<ManutencaoBasica />} />
       <Route path="/base-conhecimento/manutencao-avancada" element={<ManutencaoAvancada />} />
+      <Route path="/base-conhecimento/abastecimento-web" element= {<AbastecimentoWeb />} />
+      <Route path="/base-conhecimento/abastecimento-mobile" element= {<AbastecimentoMobile />} />
+      <Route path="/base-conhecimento/abastecimento-onboard" element= {<AbastecimentoOnboard />} />
+      <Route path="/base-conhecimento/abastecimento-eficiencia" element= {<Eficiencia />} />
     </Routes>
   );
 }
