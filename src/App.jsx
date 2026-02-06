@@ -46,6 +46,7 @@ import AbastecimentoMobile from './pages/BaseConhecimento/AbastecimentoMobile'
 import AbastecimentoWeb from './pages/BaseConhecimento/AbastecimentoWeb'
 import AbastecimentoOnboard from './pages/BaseConhecimento/AbastecimentoOnboard'
 import Eficiencia from './pages/BaseConhecimento/Eficiencia'
+import GestaoDeMultas from "./pages/BaseConhecimento/GestaoDeMultas"
 
 import { Menu } from "lucide-react";
 
@@ -193,6 +194,7 @@ export default function App() {
       <Route path="/base-conhecimento/abastecimento-mobile" element= {<AbastecimentoMobile />} />
       <Route path="/base-conhecimento/abastecimento-onboard" element= {<AbastecimentoOnboard />} />
       <Route path="/base-conhecimento/abastecimento-eficiencia" element= {<Eficiencia />} />
+      <Route path="/base-conhecimento/gestao-de-multas" element= {<GestaoDeMultas />} />
     </Routes>
   );
 }
