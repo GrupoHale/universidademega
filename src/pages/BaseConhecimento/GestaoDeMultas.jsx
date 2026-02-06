@@ -344,10 +344,11 @@ export default function GestaoDeMultas() {
                             <p>
                                 Aqui em condutores de acordo com o que a gente vai cadastrando, indicando e registrando os pontos perdidos, vai gerando dados aqui no Ranking por pontuação na CNH e no Ranking de condutores indicados.
                             </p>
+                            <div className="flex justify-center items-center" >
+                                <img src={GestaoDeMultasRankingCondutores} alt="" />
+                            </div>
 
-                            <img className="flex justify-center"  src={GestaoDeMultasRankingCondutores} alt="" />
-
-                            <h3 className="font-bold text-lg" >Nultas</h3>
+                            <h3 className="font-bold text-lg" >Multas</h3>
 
                             <p>
                                 Em multas ele me traz o gráfico com o código das infrações e o valor total das multas e um outro gráfico com a relação entre multas pagas e não pagas nos últimos 6 meses, concluindo mais abaixo com um relatório de multas canceladas.
