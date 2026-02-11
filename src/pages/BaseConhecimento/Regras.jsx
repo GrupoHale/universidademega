@@ -223,7 +223,7 @@ export default function Regras() {
                         <img src={CadastrarRegra8} alt="" />
 
                         <p>
-                            Após selecionar as câmeras desejadas clique em Salvar e fechar.
+                            Após selecionar as câmeras desejadas clique em <strong>Salvar e fechar</strong>.
                         </p>
 
                     </div>

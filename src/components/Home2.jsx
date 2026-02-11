@@ -69,7 +69,7 @@ export default function Home2() {
             descricao:"Aprenda a criar regras personalizadas para auxiliar sua operação.",
             icone:"⚠️",
             cor:"blue",
-            link:"/base-conhecimento",
+            link:"/base-conhecimento/regras",
         },
         {
             titulo:"Relatórios",

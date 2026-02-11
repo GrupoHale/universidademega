@@ -11,7 +11,7 @@ export default function PeriodosBDV() {
                     <h1 className="text-5xl font-bold text-gray-900 mb-4">Períodos de Utilização BDV</h1>
                     <div className="h-1.5 w-32 bg-gradient-to-r from-blue-500 via-cyan-500 to-blue-400 rounded-full"></div>
                 </div>
-                <div className="bg-white rounded-xl shadow-xl p-10 border border-slate-200 border-l-4 border-l-blue-500">
+                <div className="space-y-4 bg-white rounded-xl shadow-xl p-10 border border-slate-200 border-l-4 border-l-blue-500">
                     <p className="text-gray-700 mb-4">
                         Imagine-se como gestor de uma frota: veículos espalhados em diferentes cidades, enfrentando rotas desafiadoras e a necessidade constante de atualização de recursos. Como você controla tudo isso? É aqui que entra o BDV – Boletim Diário Veicular, um dos relatórios mais completos e personalizáveis ​​do SSX.
                     </p>
@@ -27,24 +27,24 @@ export default function PeriodosBDV() {
                     </p>
 
                     <p>
-                        <span className="font-bold" >:: Parado:</span> Inverte a configuração padrão registrando os intervalos em que o veículo está com a ignição desligada.
+                        <strong className="font-bold" >:: Parado:</strong> Inverte a configuração padrão registrando os intervalos em que o veículo está com a ignição desligada.
                     </p>
 
                     <p>
-                        <span className="font-bold" >:: RPM: </span> Utiliza a rotação do motor como referência para início e fim de um período, ideal para situações mais técnicas ou específicas.
+                        <strong className="font-bold" >:: RPM: </strong> Utiliza a rotação do motor como referência para início e fim de um período, ideal para situações mais técnicas ou específicas.
                     </p>
 
                     <h2 className="font-bold" >Colunas que Contam uma História</h2>
 
-                    <p>O Relatório BDV possui <span className="font=bold" >97 colunas de dados</span>, cada uma revelando aspectos únicos do comportamento do veículo. Dentre as informações, destacamos:</p>
+                    <p>O Relatório BDV possui <strong className="font=bold" >97 colunas de dados</strong>, cada uma revelando aspectos únicos do comportamento do veículo. Dentre as informações, destacamos:</p>
 
-                    <div className="flex flex-col gap-1" >
-                        <li><span className="font-bold">Trajeto do Período: </span> Endereço inicial e final do percurso.</li>
-                        <li><span className="font-bold">Quilometragem Percorrida: </span> Para medir eficiência e desgaste.</li>
-                        <li><span className="font-bold">Duração do Período: </span> Quanto tempo o veículo foi utilizado em um período utilizado.</li>
-                        <li><span className="font-bold">Velocidade Máxima e Mínima: </span> Indicadores diretos de segurança e conduta.</li>
-                        <li><span className="font-bold">Faixas de Velocidade: </span>Quanto tempo o veículo passou em cada uma das quatro faixas predefinidas:</li>
-                    </div>
+                    <ul className="list-disc list-inside space-y-2" >
+                        <li><strong>Trajeto do Período: </strong> Endereço inicial e final do percurso.</li>
+                        <li><strong>Quilometragem Percorrida: </strong> Para medir eficiência e desgaste.</li>
+                        <li><strong>Duração do Período: </strong> Quanto tempo o veículo foi utilizado em um período utilizado.</li>
+                        <li><strong>Velocidade Máxima e Mínima: </strong> Indicadores diretos de segurança e conduta.</li>
+                        <li><strong>Faixas de Velocidade: </strong>Quanto tempo o veículo passou em cada uma das quatro faixas predefinidas:</li>
+                    </ul>
 
                     <img src={FaixaVelocidades} alt="" />
 
@@ -60,10 +60,10 @@ export default function PeriodosBDV() {
                         A verdadeira mágica do BDV está na sua flexibilidade:
                     </h2>
 
-                    <div className="flex flex-rol gap-4">
-                        <li><span className="font-bold">Customização: </span> Escolha as colunas que são importantes para você. Não precisa se preocupar em lidar com dados que não fazem sentido para sua análise.</li>
-                        <li><span className="font-bold">Ordenação e Redimensionamento: </span>Ordenação e Redimensionamento: Reorganize as colunas da maneira que achar melhor e ajuste seus tamanhos para facilitar a visualização.</li>
-                    </div>
+                    <ul className="list-disc list-inside space-y-2">
+                        <li><strong className="font-bold">Customização: </strong> Escolha as colunas que são importantes para você. Não precisa se preocupar em lidar com dados que não fazem sentido para sua análise.</li>
+                        <li><strong className="font-bold">Ordenação e Redimensionamento: </strong>Ordenação e Redimensionamento: Reorganize as colunas da maneira que achar melhor e ajuste seus tamanhos para facilitar a visualização.</li>
+                    </ul>
 
                     <p>
                         Essa funcionalidade transforma o BDV em uma ferramenta intuitiva e adaptada ao seu estilo de trabalho.
@@ -72,7 +72,7 @@ export default function PeriodosBDV() {
                     <h2>Dados Telemétricos Avançados ou BDV</h2>
 
                 <p>
-                    Cerca de <span className="font-bold"> 60% das informações do BDV</span> são obtidas diretamente do sistema de diagnóstico do veículo <span className="font-bold" >(Rede CAN)</span>. É como se o veículo falasse, reportando dados precisos sobre seu desempenho. No entanto, para aproveitar todo o potencial do BDV, é essencial que o rastreador utilizado seja compatível com essa tecnologia.
+                    Cerca de <strong className="font-bold"> 60% das informações do BDV</strong> são obtidas diretamente do sistema de diagnóstico do veículo <strong className="font-bold" >(Rede CAN)</strong>. É como se o veículo falasse, reportando dados precisos sobre seu desempenho. No entanto, para aproveitar todo o potencial do BDV, é essencial que o rastreador utilizado seja compatível com essa tecnologia.
                 </p>
                 <p>
                     Além disso, os dados são consolidados automaticamente, desde que o rastreador envie as informações de telemetria como velocidade e odômetro por exemplo.
@@ -82,7 +82,7 @@ export default function PeriodosBDV() {
                     Após a consulta no BDV, o relatório pode ser exportado em PDF ou Excel, facilitando o compartilhamento e a análise posterior. E, para refinar ainda mais sua pesquisa, o BDV oferece a possibilidade de filtrar dados em cada coluna. Isso significa que você pode focar exatamente no que precisa, sem perder tempo navegando por informações irrelevantes.
                 </p>
                 <img src={FiltroParaColunas} alt=""/>
-                <h2 className="font-bold" >Por que o BDV é o relatório certo para sua frota?</h2>
+                <h2 className="font-bold">Por que o BDV é o relatório certo para sua frota?</h2>
                 <p>
                     Se você precisa de uma visão completa e específica do desempenho de sua frota, o BDV é uma solução.
                     Com ele, você pode:
@@ -94,7 +94,7 @@ export default function PeriodosBDV() {
                     <li>🛡️ Garantir segurança e eficiência;</li>
                 </ul>
                 <p>Ele combina </p>
-                <ul className="font-bold" >
+                <ul className="font-bold">
                     <li>📘 Profundidade de Dados: Informações fornecidas sobre cada veículo.</li>
                     <li>🛠️ Flexibilidade: Personalização total para atender às suas necessidades.</li>
                     <li>⚡ Praticidade: Exportação e filtros que tornam a análise rápida e eficiente.</li>
@@ -102,22 +102,22 @@ export default function PeriodosBDV() {
                 <p>
                     Não importa se sua frota opera em ambiente urbano, rodoviário ou misto, o BDV é o aliado estratégico que transforma dados em decisões inteligentes.
                 </p>
-                <h2 className="font-bold" >Observação: </h2>
+                <h3 className="font-bold text-lg ">Observação: </h3>
                 <p>
                     Os relatórios BDV ficam armazenados e acessíveis de acordo com o prazo estabelecido no contrato de cada cliente.
                 </p>
                 <p>
                     Por isso, é fundamental verificar os termos contratuais para garantir o acesso as suas informações, visto que, após período acordado, os dados serão removidos do sistema e não poderão mais ser consultados.
                 </p>
-                <h2 className="font-bold">Conclusão</h2>
+                <h2 className="font-bold text-xl">Conclusão</h2>
                 <p>
                     O BDV é mais do que um recurso técnico. Ele é a ponte entre a complexidade da gestão de frotas e a simplicidade das decisões bem fundamentadas. Imagine o impacto de identificar padrões de uso, ajustar comportamentos de motoristas e melhorar custos com dados detalhados e acessíveis.
                 </p>
                 <p>
                     Se você ainda não utiliza o BDV no SSX, agora é o momento de explorar suas possibilidades. Afinal, na gestão de frotas, a informação é o combustível do sucesso.
                 </p>
-                <h2 className="font-bold" >Abaixo você encontra a explicação de cada coluna do BDV</h2>
-                <div>
+                <h2 className="font-bold text-xl ">Abaixo você encontra a explicação de cada coluna do BDV</h2>
+                <div className="space-y-4" >
                    <details className="mb-2 cursor-pointer">
                       <summary className="font-bold">Unidade rastreada</summary>
                       <p className="text-blue-700">Nome que identifica o veículo dentro do sistema SSX.</p>
