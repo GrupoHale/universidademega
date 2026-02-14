@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import Eficiencia from "./Eficiencia";
 
 export default function Abastecimento() {
     

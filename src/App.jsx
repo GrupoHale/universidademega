@@ -49,6 +49,15 @@ import Eficiencia from './pages/BaseConhecimento/Eficiencia'
 import GestaoDeMultas from "./pages/BaseConhecimento/GestaoDeMultas"
 
 import { Menu } from "lucide-react";
+import JornadaTeclado from "./pages/BaseConhecimento/JornadaTeclado";
+import JornadaPosicao from "./pages/BaseConhecimento/JornadaPosicao";
+import JornadaOnboard from "./pages/BaseConhecimento/JornadaOnboard";
+
+import JornadaAcompanhamento from "./pages/BaseConhecimento/JornadaAcompanhamento";
+import JornadaAusencias from "./pages/BaseConhecimento/JornadaAusencias";
+import JornadaAjustar from "./pages/BaseConhecimento/JornadaAjustar";
+import JornadaFechamento from "./pages/BaseConhecimento/JornadaFechamento";
+
 
 export function VideoContent() {
   const [search, setSearch] = useState("");
@@ -195,6 +204,14 @@ export default function App() {
       <Route path="/base-conhecimento/abastecimento-onboard" element= {<AbastecimentoOnboard />} />
       <Route path="/base-conhecimento/abastecimento-eficiencia" element= {<Eficiencia />} />
       <Route path="/base-conhecimento/gestao-de-multas" element= {<GestaoDeMultas />} />
+      <Route path="/base-conhecimento/jornada-trabalho-teclado" element= {<JornadaTeclado/>} />
+      <Route path="/base-conhecimento/jornada-trabalho-onboard" element= {<JornadaOnboard/>} />
+      <Route path="/base-conhecimento/jornada-trabalho-posicao" element= {<JornadaPosicao/>} />
+      
+      <Route path="/base-conhecimento/jornada-trabalho-acompanhar" element= {<JornadaAcompanhamento/>} />
+      <Route path="/base-conhecimento/jornada-trabalho-ausencias" element= {<JornadaAusencias/>} />
+      <Route path="/base-conhecimento/jornada-trabalho-ajuste" element= {<JornadaAjustar/>} />
+      <Route path="/base-conhecimento/jornada-trabalho-fechamento" element= {<JornadaFechamento/>} />
     </Routes>
   );
 }
