@@ -10,7 +10,7 @@ import CadastrarFolgas5 from "../../pages/BaseConhecimento/img/CadastrarFolgas5.
 import JornadaEscala from "../../pages/BaseConhecimento/img/JornadaEscala.png"
 import CadastrarEscala from "../../pages/BaseConhecimento/img/CadastrarEscala.png"
 import CadastrarEscala2 from "../../pages/BaseConhecimento/img/CadastrarEscala2.png"
-import CadastrarEscala3 from "../../pages/baseConhecimento/img/CadastrarEscala3.png"
+import CadastrarEscala3 from "../../pages/BaseConhecimento/img/CadastrarEscala3.png"
 import CadastrarEscala4 from "../../pages/BaseConhecimento/img/CadastrarEscala4.png"
 import TermoAjusteEscala from "../../pages/BaseConhecimento/img/TermoAjusteEscala.png"
 import CadastrarEscala5 from "../../pages/BaseConhecimento/img/CadastrarEscala5.png"
