@@ -7,6 +7,7 @@ export default function TratarAlertas() {
                     <div className="h-1.5 w-32 bg-gradient-to-r from-blue-500 via-cyan-500 to-blue-400 rounded-full"></div>
                 </div>
                 <div className="bg-white rounded-xl shadow-xl p-10 border border-slate-200 border-l-4 border-l-blue-500">
+                    <h2 className="text-2xl font-bold mb-6 text-blue-700">Introdução</h2>
                     <p className="text-gray-700 mb-4">
                         Conteúdo para Como Tratar Alertas será adicionado aqui.
                     </p>

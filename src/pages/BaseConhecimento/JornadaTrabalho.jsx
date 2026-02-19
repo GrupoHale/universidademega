@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export default function JornadaTrabalho() {
 
-    const styleLink = "bg-blue-500 text-white items-center font-bold p-4 rounded-lg mb-4 block flex justify-center  hover:bg-blue-600"
+    const styleLink = "bg-blue-500 text-white items-center h-20 font-bold p-4 rounded-lg mb-4 block flex justify-center  hover:bg-blue-600"
 
     return (
         <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-cyan-50 px-4 py-12">
@@ -83,10 +83,10 @@ export default function JornadaTrabalho() {
 
                         <div className="space-y-4" >
                             <h2 className="font-bold text-xl flex justify-center">Implantação</h2>
-                            <div className="grid grid-cols-3 gap-5" >
-                                <Link className={styleLink}  to="/base-conhecimento/jornada-trabalho-onboard" >Jornada de trabalho com onboard e/ou RFID</Link>
-                                <Link className={styleLink} to="/base-conhecimento/jornada-trabalho-teclado" >Jornada de trabalho com o teclado</Link>
-                                <Link className={styleLink} to="/base-conhecimento/jornada-trabalho-posicao" >Jornada de trablaho por posição</Link>
+                            <div className="flex justify-center">
+                                <Link className={styleLink} to="/base-conhecimento/jornada-trabalho-onboard" >Jornada de trabalho com SSX Onboard</Link>
+                                {/* <Link className={styleLink} to="/base-conhecimento/jornada-trabalho-teclado" >Jornada de trabalho com teclado</Link>
+                                <Link className={styleLink} to="/base-conhecimento/jornada-trabalho-posicao" >Jornada de trabalho por posição</Link> */}
                             </div>
                         </div>
 
@@ -99,7 +99,6 @@ export default function JornadaTrabalho() {
                                 <Link className={styleLink} to="/base-conhecimento/jornada-trabalho-fechamento" >Período de fechamento</Link>
                             </div>
                         </div>
-
 
 
                     </div>
